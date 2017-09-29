@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">PROG3210A01</string>
+    <string name="your_profile">Your Profile</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="maps">Maps</string>
+    <string name="username">Username</string>
+    <string name="visible">Visible</string>
 </resources>

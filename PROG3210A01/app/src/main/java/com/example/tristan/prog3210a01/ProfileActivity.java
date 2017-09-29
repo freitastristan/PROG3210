@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
@@ -14,6 +15,9 @@ public class ProfileActivity extends AppCompatActivity
         implements OnEditorActionListener, OnClickListener {
 
     private EditText username;
+    private EditText firstName;
+    private EditText lastName;
+    private CheckBox isVisible;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +25,14 @@ public class ProfileActivity extends AppCompatActivity
         setContentView(R.layout.activity_profile);
 
         username = (EditText) findViewById(R.id.txtProfileUsername);
-        username.setText("Tristan");
+        firstName = (EditText) findViewById(R.id.txtProfileFirstName);
+        lastName = (EditText) findViewById(R.id.txtProfileLastName);
+        isVisible = (CheckBox) findViewById(R.id.chkProfileVisible);
+        username.setText("tFreitas");
+        firstName.setText("Tristan");
+        lastName.setText("Freitas");
+        isVisible.setChecked(true);
+
 
 
 

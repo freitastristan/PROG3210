@@ -53,7 +53,7 @@ implements OnEditorActionListener, OnClickListener {
     }
 
     public void loginAuthenticator(String username, String password) {
-        String reqUsername = "tristan";
+        String reqUsername = "tfreitas";
         String reqPassword = "password";
 
         if (username.equals(reqUsername) && password.equals(reqPassword))

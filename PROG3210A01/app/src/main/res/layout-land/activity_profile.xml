@@ -11,15 +11,16 @@
         android:layout_height="501dp"
         android:layout_marginLeft="4dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        tools:layout_editor_absoluteY="-2dp"
-        android:layout_marginStart="4dp">
+        tools:layout_editor_absoluteY="-4dp"
+        android:layout_marginStart="4dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/lblProfileTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Your Profile"
+            android:text="@string/your_profile"
             android:textSize="32sp"
             android:layout_alignParentTop="true"
             android:layout_alignLeft="@+id/txtProfileUsername"
@@ -72,7 +73,7 @@
             android:id="@+id/lblProfileUsername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Username"
+            android:text="@string/username"
             android:textSize="17sp"
             android:layout_alignBaseline="@+id/txtProfileUsername"
             android:layout_alignBottom="@+id/txtProfileUsername"
@@ -85,7 +86,7 @@
             android:id="@+id/lblProfileFirstName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="First Name"
+            android:text="@string/first_name"
             android:textSize="17sp"
             android:layout_alignBaseline="@+id/txtProfileFirstName"
             android:layout_alignBottom="@+id/txtProfileFirstName"
@@ -96,7 +97,7 @@
             android:id="@+id/lblProfileLastName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Last Name"
+            android:text="@string/last_name"
             android:textSize="17sp"
             android:layout_alignBaseline="@+id/txtProfileLastName"
             android:layout_alignBottom="@+id/txtProfileLastName"
@@ -113,7 +114,7 @@
             android:layout_marginRight="15dp"
             android:layout_toLeftOf="@+id/chkProfileVisible"
             android:layout_toStartOf="@+id/chkProfileVisible"
-            android:text="Visible"
+            android:text="@string/visible"
             android:textSize="17sp" />
 
         <Button
@@ -121,9 +122,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClick"
-            android:text="Maps"
+            android:text="@string/maps"
             android:textAlignment="center"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:textStyle="bold|italic"
             tools:layout_editor_absoluteX="488dp"
             tools:layout_editor_absoluteY="247dp"
