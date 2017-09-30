@@ -11,8 +11,9 @@
     <RelativeLayout
         android:layout_width="585dp"
         android:layout_height="514dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="-11dp">
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="5dp">
 
         <EditText
             android:id="@+id/editUsername"

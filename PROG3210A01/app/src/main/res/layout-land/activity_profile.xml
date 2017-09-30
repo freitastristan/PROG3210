@@ -62,12 +62,10 @@
             android:id="@+id/chkProfileVisible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/txtProfileLastName"
-            android:layout_alignRight="@+id/txtProfileLastName"
-            android:layout_below="@+id/txtProfileLastName"
-            android:layout_marginEnd="14dp"
-            android:layout_marginRight="14dp"
-            android:layout_marginTop="17dp" />
+            android:layout_alignBaseline="@+id/txtProfileUsername"
+            android:layout_alignBottom="@+id/txtProfileUsername"
+            android:layout_alignRight="@+id/btnProfileMaps"
+            android:layout_alignEnd="@+id/btnProfileMaps" />
 
         <TextView
             android:id="@+id/lblProfileUsername"
@@ -128,10 +126,10 @@
             android:textStyle="bold|italic"
             tools:layout_editor_absoluteX="488dp"
             tools:layout_editor_absoluteY="247dp"
-            android:layout_centerVertical="true"
+            android:layout_marginRight="22dp"
+            android:layout_marginEnd="22dp"
+            android:layout_below="@+id/lblProfileFirstName"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="24dp"
-            android:layout_marginEnd="24dp" />
+            android:layout_alignParentEnd="true" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

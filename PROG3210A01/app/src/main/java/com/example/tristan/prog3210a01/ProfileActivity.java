@@ -1,5 +1,6 @@
 package com.example.tristan.prog3210a01;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
+import android.widget.Toast;
 
 public class ProfileActivity extends AppCompatActivity
         implements OnEditorActionListener, OnClickListener {
@@ -24,6 +26,13 @@ public class ProfileActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
+        Context context = getApplicationContext();
+        CharSequence text = "Login Successful";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+
         username = (EditText) findViewById(R.id.txtProfileUsername);
         firstName = (EditText) findViewById(R.id.txtProfileFirstName);
         lastName = (EditText) findViewById(R.id.txtProfileLastName);
@@ -32,9 +41,6 @@ public class ProfileActivity extends AppCompatActivity
         firstName.setText("Tristan");
         lastName.setText("Freitas");
         isVisible.setChecked(true);
-
-
-
 
     }
 
