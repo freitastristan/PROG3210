@@ -14,11 +14,18 @@ import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 import android.app.Activity;
 import android.widget.Toast;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.List;
 
 import static android.content.ContentValues.TAG;
 
 public class MainActivity  extends Activity
 implements OnEditorActionListener, OnClickListener {
+
+    private User user;
+    private AppDatabase database;
 
     private EditText username;
     private EditText password;
@@ -28,6 +35,16 @@ implements OnEditorActionListener, OnClickListener {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        database = AppDatabase.getDatabase(getApplicationContext());
+
+        // add some data
+        List<User> users = database.userDao().getAllUser();
+        System.out.print(users);
+//        if (users.size()==0) {
+            database.userDao().addUser(new User(2, "Test 3"));
+            user = database.userDao().getAllUser().get(0);
+            Toast.makeText(this, String.valueOf(user.id), Toast.LENGTH_SHORT).show();
+//        }
 
         username = (EditText) findViewById(R.id.editUsername);
         password = (EditText) findViewById(R.id.editPassword);

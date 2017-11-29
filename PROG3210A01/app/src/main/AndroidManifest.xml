@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".TempMapActivity"></activity>
+        <activity android:name=".TempMapActivity" />
+        <activity android:name=".DatabaseActivity"></activity>
     </application>
 
 </manifest>
