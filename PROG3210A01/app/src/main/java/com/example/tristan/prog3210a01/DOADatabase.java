@@ -14,8 +14,11 @@ import java.util.List;
 @Dao
 public interface DOADatabase {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void addUser(User user);
+    void registerUser(AppUsers appUser);
 
-    @Query("select * from user")
-    public List<User> getAllUser();
+    @Query("select * from appusers")
+    public List<AppUsers> getAllUsers();
+
+    @Query("delete from appusers")
+    void removeAllUsers();
 }

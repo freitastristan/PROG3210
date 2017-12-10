@@ -15,6 +15,17 @@
         tools:layout_editor_absoluteX="4dp"
         tools:layout_editor_absoluteY="5dp">
 
+        <Button
+            android:id="@+id/btnRegisterAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Register"
+            android:layout_alignBaseline="@+id/btnLogin"
+            android:layout_alignBottom="@+id/btnLogin"
+            android:layout_alignLeft="@+id/editPassword"
+            android:layout_alignStart="@+id/editPassword" />
+
         <EditText
             android:id="@+id/editUsername"
             android:layout_width="wrap_content"
@@ -49,10 +60,10 @@
             android:id="@+id/btnLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editPassword"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="31dp"
             android:onClick="onClick"
-            android:text="Login" />
+            android:text="Login"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/editPassword"
+            android:layout_alignEnd="@+id/editPassword" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

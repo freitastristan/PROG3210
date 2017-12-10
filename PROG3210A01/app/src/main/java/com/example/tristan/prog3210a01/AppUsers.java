@@ -7,15 +7,14 @@ import android.arch.persistence.room.PrimaryKey;
  */
 
 @Entity
-public class User {
-    @PrimaryKey
-    public final int id;
+public class AppUsers {
+    @PrimaryKey(autoGenerate = true)
+    long id;
     public String name;
     public String password;
 
 
-    public User(int id, String name, String password) {
-        this.id = id;
+    public AppUsers(String name, String password) {
         this.name = name;
         this.password = password;
     }

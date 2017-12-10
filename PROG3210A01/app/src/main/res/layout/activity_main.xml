@@ -18,22 +18,22 @@
             android:id="@+id/editUsername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="127dp"
+            android:layout_marginTop="86dp"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:layout_below="@+id/lblLogin"
+            android:layout_centerHorizontal="true" />
 
         <EditText
             android:id="@+id/editPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/editUsername"
-            android:layout_alignStart="@+id/editUsername"
-            android:layout_below="@+id/editUsername"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="37dp"
             android:ems="10"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:layout_below="@+id/editUsername"
+            android:layout_alignLeft="@+id/editUsername"
+            android:layout_alignStart="@+id/editUsername" />
 
         <TextView
             android:id="@+id/lblLogin"
@@ -42,7 +42,8 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="23dp"
-            android:text="Login" />
+            android:text="Login"
+            android:textSize="25sp" />
 
         <Button
             android:id="@+id/btnLogin"
@@ -53,5 +54,16 @@
             android:layout_marginTop="31dp"
             android:onClick="onClick"
             android:text="Login" />
+
+        <Button
+            android:id="@+id/btnRegisterAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnLogin"
+            android:layout_alignStart="@+id/btnLogin"
+            android:layout_below="@+id/btnLogin"
+            android:layout_marginTop="18dp"
+            android:onClick="onClick"
+            android:text="Register" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

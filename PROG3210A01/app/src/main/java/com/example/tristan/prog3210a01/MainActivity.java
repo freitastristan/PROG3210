@@ -2,7 +2,6 @@ package com.example.tristan.prog3210a01;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -14,41 +13,26 @@ import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 import android.app.Activity;
 import android.widget.Toast;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import java.util.List;
 
 import static android.content.ContentValues.TAG;
 
 public class MainActivity  extends Activity
 implements OnEditorActionListener, OnClickListener {
 
-    private User user;
-    private AppDatabase database;
-
     private EditText username;
     private EditText password;
     private Button login;
+    private Button register;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        database = AppDatabase.getDatabase(getApplicationContext());
-
-        // add some data
-        List<User> users = database.userDao().getAllUser();
-        System.out.print(users);
-//        if (users.size()==0) {
-            database.userDao().addUser(new User(2, "Test 3"));
-            user = database.userDao().getAllUser().get(0);
-            Toast.makeText(this, String.valueOf(user.id), Toast.LENGTH_SHORT).show();
-//        }
 
         username = (EditText) findViewById(R.id.editUsername);
         password = (EditText) findViewById(R.id.editPassword);
-        login = (Button) findViewById(R.id.btnLogin);
+        login    = (Button) findViewById(R.id.btnLogin);
+        register = (Button) findViewById(R.id.btnRegisterAccount);
     }
 
     @Override
@@ -58,6 +42,10 @@ implements OnEditorActionListener, OnClickListener {
         {
             case R.id.btnLogin:
                 loginAuthenticator(username.getText().toString(), password.getText().toString());
+                break;
+            case R.id.btnRegisterAccount:
+                Intent registerIntent = new Intent(this, RegisterActivity.class);
+                startActivity(registerIntent);
                 break;
             default:
                 throw new RuntimeException("Button click error");

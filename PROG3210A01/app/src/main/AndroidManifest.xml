@@ -15,10 +15,16 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
         <activity android:name=".ProfileActivity" />
         <activity android:name=".TempMapActivity" />
-        <activity android:name=".DatabaseActivity"></activity>
+        <activity android:name=".DatabaseActivity" />
+        <activity android:name=".RegisterActivity" />
     </application>
 
 </manifest>

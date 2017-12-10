@@ -9,8 +9,8 @@ import android.arch.persistence.room.RoomDatabase;
 /**
  * Created by Tristan on 2017-11-29.
  */
-@Database(entities = {User.class
-}, version = 16, exportSchema = false)
+@Database(entities = {AppUsers.class
+}, version = 17, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
     private static AppDatabase INSTANCE;
 
@@ -19,7 +19,7 @@ public abstract class AppDatabase extends RoomDatabase {
     public static AppDatabase getDatabase(Context context) {
         if (INSTANCE == null) {
             INSTANCE =
-                    Room.databaseBuilder(context, AppDatabase.class, "userdatabase")
+                    Room.databaseBuilder(context, AppDatabase.class, "A02Database")
 //Room.inMemoryDatabaseBuilder(context.getApplicationContext(), AppDatabase.class)
                             // To simplify the exercise, allow queries on the main thread.
                             // Don't do this on a real app!
