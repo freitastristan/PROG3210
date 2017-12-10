@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tristan.prog3210a01.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="585dp"
+        android:layout_height="501dp"
+        android:layout_marginLeft="4dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="-4dp"
+        android:layout_marginStart="4dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/lblProfileTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/your_profile"
+            android:textSize="32sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/txtProfileUsername"
+            android:layout_alignStart="@+id/txtProfileUsername" />
+
+        <EditText
+            android:id="@+id/txtProfileUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/lblProfileTitle"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/txtProfileFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/txtProfileUsername"
+            android:layout_alignLeft="@+id/txtProfileUsername"
+            android:layout_alignStart="@+id/txtProfileUsername" />
+
+        <EditText
+            android:id="@+id/txtProfileLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/txtProfileFirstName"
+            android:layout_alignLeft="@+id/txtProfileUsername"
+            android:layout_alignStart="@+id/txtProfileUsername" />
+
+        <CheckBox
+            android:id="@+id/chkProfileVisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtProfileUsername"
+            android:layout_alignBottom="@+id/txtProfileUsername"
+            android:layout_alignRight="@+id/btnProfileMaps"
+            android:layout_alignEnd="@+id/btnProfileMaps" />
+
+        <TextView
+            android:id="@+id/lblProfileUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textSize="17sp"
+            android:layout_alignBaseline="@+id/txtProfileUsername"
+            android:layout_alignBottom="@+id/txtProfileUsername"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="54dp"
+            android:layout_marginStart="54dp" />
+
+        <TextView
+            android:id="@+id/lblProfileFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_name"
+            android:textSize="17sp"
+            android:layout_alignBaseline="@+id/txtProfileFirstName"
+            android:layout_alignBottom="@+id/txtProfileFirstName"
+            android:layout_alignLeft="@+id/lblProfileUsername"
+            android:layout_alignStart="@+id/lblProfileUsername" />
+
+        <TextView
+            android:id="@+id/lblProfileLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/last_name"
+            android:textSize="17sp"
+            android:layout_alignBaseline="@+id/txtProfileLastName"
+            android:layout_alignBottom="@+id/txtProfileLastName"
+            android:layout_alignLeft="@+id/lblProfileFirstName"
+            android:layout_alignStart="@+id/lblProfileFirstName" />
+
+        <TextView
+            android:id="@+id/lblProfileVisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/chkProfileVisible"
+            android:layout_alignBottom="@+id/chkProfileVisible"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/chkProfileVisible"
+            android:layout_toStartOf="@+id/chkProfileVisible"
+            android:text="@string/visible"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btnProfileMaps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="@string/maps"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"
+            tools:layout_editor_absoluteX="488dp"
+            tools:layout_editor_absoluteY="247dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginEnd="22dp"
+            android:layout_below="@+id/lblProfileFirstName"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

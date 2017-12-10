@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\PROG3210\\PROG3210A01\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ta\\values-ta.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 100,
+                    "endOffset": 151
+                },
+                "from": {
+                    "file": "C:\\Users\\Tristan\\.android\\build-cache\\5fd889b2c4f3cc90fcce7e758cd4acb850337703\\output\\res\\values-ta\\values-ta.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 100,
+                        "endOffset": 151
+                    }
+                }
+            }
+        ]
+    }
+]

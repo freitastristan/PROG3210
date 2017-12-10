@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="extensions-1.0.0-rc1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/787acf81f4a6a52f257d2fd003c7a29ddb6dccf2/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/787acf81f4a6a52f257d2fd003c7a29ddb6dccf2/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/extensions/1.0.0-rc1/f92754d7325dbb7a88e63daac8f0fe2b9be336c5/extensions-1.0.0-rc1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
